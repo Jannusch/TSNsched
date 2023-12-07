@@ -24,7 +24,7 @@
 set -e
 
 # Setupt
-pacman -Syu
+pacman -Syu --noconfirm
 pacman-key --init
 pacman -Syu --noconfirm
 pacman -S --noconfirm gcc git make clang jdk-openjdk python
