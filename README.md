@@ -1,1 +1,1 @@
-# TSNsched but not with gradle and gRPC
+# TSNsched but now with gradle and gRPC
