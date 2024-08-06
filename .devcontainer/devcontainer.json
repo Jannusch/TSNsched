@@ -1,0 +1,73 @@
+//
+// Copyright (C) 2024 Jannusch Bigge <jannusch.bigge@tu-dresden.de>
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+// devcontainer  for TSNsched and gRPC Server
+{
+	// name of the container
+	"name": "TSNsched and Z3 with a gRPC server",
+
+	// build from Dockerfile
+	"build": {
+		"dockerfile": "Dockerfile"
+	}
+	,
+
+	// allow debugger to attach to running processes (part 1)
+	// allow debugger to attach to running processes (part 1)
+	"capAdd": [
+		"SYS_PTRACE"
+	]
+	,
+
+	// allow debugger to attach to running processes (part 1)
+	"securityOpt": [
+		"seccomp=unconfined"
+	]
+	,
+
+    	"containerUser": "root",
+        "remoteUser": "root",
+
+
+
+
+	// vscode extensions and settings
+	"customizations": {
+		"vscode": {
+			"settings": {
+				// use zsh as default shell (part 1)
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "zsh"
+					}
+				}
+				,
+				// use zsh as default shell (part 2)
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
+	},
+
+	"containerEnv": {
+	},
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:"
+	}
+}
+
