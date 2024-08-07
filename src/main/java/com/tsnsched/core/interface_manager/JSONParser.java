@@ -43,6 +43,7 @@ public class JSONParser implements GenericParser {
 	
 	public JSONParser(String inputFilePath) {
 		this.inputFilePath = inputFilePath;
+		this.printer = new Printer();
 	}
 	
 	private Device[] getListOfDevices(JsonObject jsonObject) {
