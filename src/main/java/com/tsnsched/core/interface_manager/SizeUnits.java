@@ -2,6 +2,7 @@ package com.tsnsched.core.interface_manager;
 
 public enum SizeUnits {
 	B,
+	BIT,
 	BYTE,
 	KBIT,
 	KILOBIT,
