@@ -29,8 +29,8 @@ import com.tsnsched.core.nodes.*;
 
 public class Printer {
 
-	private Boolean enableConsoleOutput = false;
-	private Boolean enableLoggerFile = false;
+	private Boolean enableConsoleOutput = true;
+	private Boolean enableLoggerFile = true;
 	
 
 	public Printer () {
