@@ -852,6 +852,21 @@ public class JSONParser implements GenericParser {
 		return flowInfoList;
 
 	}
+
+	public String generateOutputToString(Network net) {
+		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+		JsonObject networkObject = new JsonObject();
+		JsonArray switchList = new JsonArray();
+
+
+		Map<String, Object> networkInfo = new HashMap<>();
+
+		networkInfo.put("switches", this.extractSwitchInfoList(net));
+		networkInfo.put("flows", this.extractFlowInfoList(net));
+
+		return gson.toJson(networkInfo);
+	}
 	
 	public void generateOutput(Network net) {
 		
