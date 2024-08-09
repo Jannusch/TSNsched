@@ -1,4 +1,4 @@
-name: Test
+name: Deploy container with Z3 but without JAR
 run-name: Deploying container
 on:
   push:
@@ -11,7 +11,6 @@ jobs:
     env:
       DOCKER_ORG: s4685136
     steps:
-      - name: Checkout repo
       - uses: actions/checkout@v4
       
       - name: Set up Docker BuildX
