@@ -73,6 +73,7 @@ public class TSNschedServer {
             ScheduleOutput rply = ScheduleOutput.newBuilder().setOutput(result).build();
             responseObserver.onNext(rply);
             responseObserver.onCompleted();
+            System.out.println("Send new schedule");
         }
     }
 
