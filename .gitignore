@@ -28,3 +28,6 @@ gradle-app.setting
 # login
 log.txt
 log.log
+
+# gitea things
+.gitea
