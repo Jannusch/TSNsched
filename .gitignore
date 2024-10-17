@@ -24,3 +24,7 @@ gradle-app.setting
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+# login
+log.txt
+log.log
