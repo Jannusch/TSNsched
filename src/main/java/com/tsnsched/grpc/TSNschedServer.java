@@ -67,6 +67,7 @@ public class TSNschedServer {
             JSONParser parser = new JSONParser("NO FILE");
             Network net = parser.parseInputContent(req.getInput());
             ScheduleGenerator gen = new ScheduleGenerator();
+            // TODO: would be nice to have the time, different log levels and more verbose printing/logging
             gen.generateSchedule(net);
             String result = parser.generateOutputToString(net);
 
