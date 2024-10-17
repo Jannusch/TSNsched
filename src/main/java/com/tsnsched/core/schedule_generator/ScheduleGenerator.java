@@ -41,8 +41,8 @@ public class ScheduleGenerator {
 		private Boolean generateSimulationFiles = false;
 		private Boolean serializeNetwork = false;
 		private Boolean loadNetwork = false;
-		private Boolean enableConsoleOutput = false;
-		private Boolean enableLoggerFile = false;
+		private Boolean enableConsoleOutput = true;
+		private Boolean enableLoggerFile = true;
 		private Boolean generateJSONOutput = true;
 		private Boolean useIncrementalStrategy = false;
 		private Boolean enablePacketTimeOutput = false;
