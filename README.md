@@ -30,5 +30,8 @@ Other scripts from the original repo, how one can start the scheduler, are remov
 The repo has a DevContainer and the underlying Dockerfile.
 This replaces the install script and hopefully makes it easier to run the project.
 
+## Planed Features
+- [ ] Create Docker container with entry point to automatically start scheduler
+
 
 
